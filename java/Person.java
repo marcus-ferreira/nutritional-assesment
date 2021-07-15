@@ -1,9 +1,9 @@
-public class Nutrition {
+public class Person {
     String name, sex, act;
     int age;
     float height, weight;
 
-    Nutrition(String name, String sex, int age, float height, float weight, String act) {
+    Person(String name, String sex, int age, float height, float weight, String act) {
         this.name = name;
         this.sex = sex;
         this.age = age;
@@ -172,14 +172,5 @@ public class Nutrition {
 
     public String toString() {
         return this.name + ", " + this.sex + ", " + this.age + " anos, " + this.weight + " kg, " + this.height + " m, " + this.act + "\nIMC (Indice de Massa Corporea): " + this.getIMC() + " (" + this.getTitleIMC() + ")\nPeso Teorico: " + this.getTheoricalWeight() + " kg\nTMB (Taxa Metabólica Basal): " + this.getTMB() + "\nVET (Valor Energetico Total): " + this.getVET() + "\nGTE (Gasto Total Energetico): " + this.getGTE() + "\n";
-    }
-
-
-    public static void main(String[] args) {
-        Nutrition marcus = new Nutrition("Marcus", "m", 28, 1.71f, 61.0f, "m");
-        Nutrition larissa = new Nutrition("Larissa", "f", 22, 1.57f, 81.0f, "m");
-
-        System.out.println(marcus);
-        System.out.println(larissa);
     }
 }
