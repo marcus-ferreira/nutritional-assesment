@@ -1,6 +1,6 @@
 # Nutritional Assesment
 
-Program written with Python, using tkinter library, to calculate nutritional assesment.
+Program to calculate nutritional assesment.
 
 ## Description
 
